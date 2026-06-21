@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8" />
@@ -33,7 +33,6 @@ body {
   position: relative;
   min-height: 100vh;
 }
-
 /* Light blue stripes like Argentina jersey */
 body::before {
   content: '';
@@ -49,7 +48,6 @@ body::before {
   pointer-events: none;
   z-index: 0;
 }
-
 /* Large Argentina flag watermark bottom right */
 body::after {
   content: '🇦🇷';
@@ -63,13 +61,11 @@ body::after {
   transform: rotate(-12deg);
   user-select: none;
 }
-
 /* Make sure all content appears above background */
 .app-header, .hero-banner, .tabs-wrap, .content-area, main, .container {
   position: relative;
   z-index: 1;
 }
-
 /* ─── PARTICLES ─── */
 #particles { position: fixed; inset: 0; pointer-events: none; z-index: 0; overflow: hidden; }
 .ptcl {
@@ -84,7 +80,6 @@ body::after {
   92%  { opacity: 0.1; }
   100% { transform: translateY(-110vh) translateX(-10px) scale(0.3); opacity: 0; }
 }
-
 /* ─── LOADING BAR ─── */
 .loading-bar {
   height: 2px; background: var(--bg3);
@@ -96,7 +91,6 @@ body::after {
   animation: lb-slide 1s ease-in-out infinite;
 }
 @keyframes lb-slide { 0%{left:-40%} 100%{left:100%} }
-
 /* ─── HEADER ─── */
 .app-header {
   position: sticky;
@@ -183,7 +177,6 @@ body::after {
   50% { opacity: 0.5; transform: scale(0.8); }
 }
 #last-update { font-size: 10px; font-weight: 400; color: var(--muted); margin-left: auto; }
-
 /* ─── HERO BANNER ─── */
 .hero-banner {
   background: linear-gradient(135deg, #071828 0%, #0a2444 50%, #071020 100%);
@@ -253,7 +246,6 @@ body::after {
   border-color: rgba(240,180,41,0.35);
   color: #f0b429;
 }
-
 /* ─── APP LOGO ICON ─── */
 .app-logo-icon {
   display: flex;
@@ -269,7 +261,6 @@ body::after {
 }
 .app-logo-stars { font-size: 8px; letter-spacing: 0px; line-height: 1; }
 .app-logo-trophy { font-size: 22px; line-height: 1; }
-
 /* ─── TEAM DISPLAYS ─── */
 .team-display {
   display: flex;
@@ -299,7 +290,6 @@ body::after {
   max-width: 100px;
   word-break: break-word;
 }
-
 /* ─── TABS ─── */
 .tabs-wrap { max-width: 1100px; margin: 0 auto; padding: 20px 20px 0; position: relative; z-index: 1; }
 .tabs { display: flex; gap: 4px; background: var(--bg2); border: 1px solid var(--border); border-radius: 14px; padding: 4px; width: fit-content; }
@@ -308,12 +298,10 @@ body::after {
 .tab-btn.active { background: linear-gradient(135deg, var(--gold), var(--gold2)); color: #0d1117; font-weight: 700; box-shadow: 0 4px 18px rgba(240,180,41,0.32); }
 .tab-badge { background: rgba(255,255,255,0.22); border-radius: 50px; padding: 1px 7px; font-size: 11px; font-weight: 800; }
 .tab-btn.active .tab-badge { background: rgba(0,0,0,0.22); }
-
 /* ─── CONTENT ─── */
 .content-area { max-width: 1100px; margin: 0 auto; padding: 24px 20px 60px; position: relative; z-index: 1; }
 .tab-panel { display: none; }
 .tab-panel.active { display: block; }
-
 /* ─── GROUPS GRID ─── */
 .groups-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(342px, 1fr)); gap: 20px; }
 .group-card {
@@ -340,7 +328,6 @@ body::after {
 .team-flag { border-radius: 2px; vertical-align: middle; margin-right: 7px; }
 .team-name-cell { display: flex; align-items: center; }
 .pts-bold { font-weight: 900; color: var(--gold); }
-
 /* Group mini-matches */
 .group-matches { padding: 8px 0 4px; }
 .section-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; padding: 6px 14px 4px; color: var(--muted); }
@@ -358,7 +345,6 @@ body::after {
 .mini-score.s-live { background: rgba(63,185,80,0.15); color: var(--green); animation: blink 1.5s ease-in-out infinite; }
 @keyframes blink { 0%,100%{opacity:1} 50%{opacity:.5} }
 .mini-time { font-size: 10px; color: var(--muted); display: block; text-align: center; margin-top: 2px; }
-
 /* ─── FIXTURE TAB ─── */
 .fixture-filters { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 20px; }
 .filter-btn { padding: 6px 16px; border: 1px solid var(--border); background: var(--bg2); color: var(--muted); border-radius: 50px; cursor: pointer; font-family: inherit; font-size: 12px; font-weight: 600; transition: all .18s; }
@@ -391,13 +377,11 @@ body::after {
 .tt-fin  { background: var(--bg3); color: var(--muted); }
 .empty-state { text-align: center; padding: 60px 20px; color: var(--muted); }
 .empty-state .eico { font-size: 48px; margin-bottom: 12px; }
-
 /* ─── HOY TAB ─── */
 .hoy-header { background: linear-gradient(135deg, rgba(240,180,41,0.08), rgba(178,31,31,0.07)); border: 1px solid rgba(240,180,41,0.2); border-radius: var(--radius); padding: 18px 22px; margin-bottom: 24px; display: flex; align-items: center; gap: 14px; }
 .hoy-header-ico { font-size: 34px; }
 .hoy-header h2 { font-size: 21px; font-weight: 800; color: var(--gold); }
 .hoy-header p { font-size: 13px; color: var(--muted); margin-top: 3px; }
-
 /* Section headers in Hoy tab */
 .hoy-section { margin-bottom: 24px; }
 .hoy-sec-hdr { display: flex; align-items: center; gap: 12px; padding: 0 0 10px; border-bottom: 1px solid var(--border); margin-bottom: 14px; }
@@ -406,7 +390,6 @@ body::after {
 .hoy-sec-label.lbl-hoy    { background: linear-gradient(90deg, var(--gold), var(--gold2)); color: #0d1117; box-shadow: 0 2px 10px rgba(240,180,41,0.3); }
 .hoy-sec-label.lbl-manana { background: rgba(63,185,80,0.15); color: var(--green); }
 .hoy-sec-date { font-size: 12px; color: var(--muted); font-weight: 500; }
-
 /* Match cards in Hoy tab */
 .hmc {
   background: var(--bg2); border: 1px solid var(--border); border-radius: var(--radius);
@@ -451,13 +434,11 @@ body::after {
 .st-fin      { background: rgba(63,185,80,0.12); color: var(--green); }
 .st-prox     { background: rgba(240,180,41,0.1); color: var(--gold); }
 .st-pend     { background: var(--bg4); color: var(--muted); font-style: italic; }
-
 /* ─── SCROLLBAR ─── */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: var(--bg); }
 ::-webkit-scrollbar-thumb { background: var(--bg4); border-radius: 4px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--muted); }
-
 /* ─── RESPONSIVE ─── */
 @media (max-width: 680px) {
   .groups-grid { grid-template-columns: 1fr; }
@@ -477,11 +458,9 @@ body::after {
 </style>
 </head>
 <body>
-
 <!-- ── PARTICLES ── -->
 <div id="particles" aria-hidden="true"></div>
 <div class="loading-bar" id="loading-bar"></div>
-
 <!-- ══════════ HEADER ══════════ -->
 <header class="app-header">
   <div class="header-inner">
@@ -500,7 +479,6 @@ body::after {
     <span id="last-update"></span>
   </div>
 </header>
-
 <!-- ══════════ HERO BANNER ══════════ -->
 <div class="hero-banner">
   <div class="hero-flag-bg">🇦🇷</div>
@@ -518,7 +496,6 @@ body::after {
     </div>
   </div>
 </div>
-
 <!-- ══════════ TABS ══════════ -->
 <div class="tabs-wrap">
   <div class="tabs" role="tablist">
@@ -527,15 +504,12 @@ body::after {
     <button class="tab-btn" onclick="switchTab('today')" id="btn-today">🔴 Hoy <span class="tab-badge" id="today-badge">0</span></button>
   </div>
 </div>
-
 <!-- ══════════ CONTENT ══════════ -->
 <main class="content-area">
-
   <!-- GRUPOS -->
   <div class="tab-panel active" id="panel-groups">
     <div class="groups-grid" id="groups-grid"></div>
   </div>
-
   <!-- FIXTURE -->
   <div class="tab-panel" id="panel-fixture">
     <div class="fixture-filters">
@@ -548,7 +522,6 @@ body::after {
     </div>
     <div id="fixture-list"></div>
   </div>
-
   <!-- HOY -->
   <div class="tab-panel" id="panel-today">
     <div class="hoy-header">
@@ -560,9 +533,7 @@ body::after {
     </div>
     <div id="today-list"></div>
   </div>
-
 </main>
-
 <script>
 // ═══════════════════════════════════════════════════════════════════
 // API-FOOTBALL CONFIG
@@ -571,7 +542,6 @@ const API_KEY  = '1924284db5fc3b7167817362138eb1d2';
 const API_BASE = 'https://v3.football.api-sports.io';
 const LEAGUE   = 1;
 const SEASON   = 2026;
-
 // ═══════════════════════════════════════════════════════════════════
 // SMART REQUEST COUNTER (resets at midnight ARG)
 // ═══════════════════════════════════════════════════════════════════
@@ -597,7 +567,6 @@ function updateReqCounter() {
   const el = document.getElementById('req-counter');
   if (el) el.textContent = 'Consultas hoy: ' + getReqCount() + ' / 100';
 }
-
 // ═══════════════════════════════════════════════════════════════════
 // CACHE HELPERS
 // ═══════════════════════════════════════════════════════════════════
@@ -612,7 +581,6 @@ function cacheGet(key, maxAgeMs) {
     return s.data;
   } catch { return null; }
 }
-
 // ═══════════════════════════════════════════════════════════════════
 // FECHA EN HORA ARGENTINA
 // ═══════════════════════════════════════════════════════════════════
@@ -624,7 +592,6 @@ function getArgDate(offsetDays) {
 const HOY    = getArgDate(0);
 const AYER   = getArgDate(-1);
 const MANANA = getArgDate(1);
-
 // ═══════════════════════════════════════════════════════════════════
 // CODIGOS DE BANDERAS (fallback flagcdn)
 // ═══════════════════════════════════════════════════════════════════
@@ -661,7 +628,6 @@ function flagFallback(eq) {
   const code = CC_ACCENTED[eq] || CC[eq.normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/\s/g,' ')] || 'un';
   return 'https://flagcdn.com/64x48/' + code + '.png';
 }
-
 // Traducción inglés→español (nombres API)
 const NOMBRES = {
   'Mexico':'México','South Africa':'Sudáfrica','South Korea':'Corea del Sur',
@@ -682,7 +648,6 @@ const NOMBRES = {
   'Colombia':'Colombia','England':'Inglaterra','Croatia':'Croacia',
   'Ghana':'Ghana','Panama':'Panamá'
 };
-
 const LIVE_STATUSES    = {'1H':1,'HT':1,'2H':1,'ET':1,'BT':1,'P':1,'INT':1,'LIVE':1};
 const PLAYED_STATUSES  = {'FT':1,'AET':1,'PEN':1};
 const STATUS_ES = {
@@ -690,7 +655,6 @@ const STATUS_ES = {
   '2H':'En Vivo · 2° Tiempo','FT':'Finalizado',
   'PEN':'Penales','AET':'Prórroga','BT':'Prórroga'
 };
-
 // ═══════════════════════════════════════════════════════════════════
 // GRUPOS
 // ═══════════════════════════════════════════════════════════════════
@@ -708,7 +672,6 @@ const GRUPOS = {
   K:['Portugal','RD Congo','Uzbekistán','Colombia'],
   L:['Inglaterra','Croacia','Ghana','Panamá'],
 };
-
 // ═══════════════════════════════════════════════════════════════════
 // PARTIDOS_BASE — fallback estático con resultados reales conocidos
 // ═══════════════════════════════════════════════════════════════════
@@ -786,10 +749,8 @@ const PARTIDOS_BASE = [
   {id:'j05',utcDate:'2026-06-28',utcTime:'02:00',grupo:'J',local:'Argelia',visit:'Austria',venue:'Lincoln Financial Field, Filadelfia',gL:null,gV:null,logoL:null,logoV:null,statusShort:'NS',elapsed:null},
   {id:'j06',utcDate:'2026-06-28',utcTime:'02:00',grupo:'J',local:'Jordania',visit:'Argentina',venue:'Arrowhead Stadium, Kansas City',gL:null,gV:null,logoL:null,logoV:null,statusShort:'NS',elapsed:null},
 ];
-
 let datos = JSON.parse(JSON.stringify(PARTIDOS_BASE));
 let filtroActual = 'all';
-
 // ═══════════════════════════════════════════════════════════════════
 // UTILIDADES TIEMPO
 // ═══════════════════════════════════════════════════════════════════
@@ -800,12 +761,10 @@ function horaARG(utcDate, utcTime) {
     hour: '2-digit', minute: '2-digit', hour12: false
   });
 }
-
 function fechaARG(m) {
   var dt = new Date(m.utcDate + 'T' + m.utcTime + ':00Z');
   return dt.toLocaleDateString('en-CA', { timeZone: 'America/Argentina/Buenos_Aires' });
 }
-
 function getEstado(m) {
   if (LIVE_STATUSES[m.statusShort])   return 'live';
   if (PLAYED_STATUSES[m.statusShort]) return 'played';
@@ -816,18 +775,15 @@ function getEstado(m) {
   if (ahora > fin) return 'played';
   return 'upcoming';
 }
-
 function fechaES(dateStr) {
   var d = new Date(dateStr + 'T12:00:00Z');
   var s = d.toLocaleDateString('es-ES', { weekday:'long', day:'numeric', month:'long', year:'numeric' });
   return s.charAt(0).toUpperCase() + s.slice(1);
 }
-
 function fechaCorta(dateStr) {
   var d = new Date(dateStr + 'T12:00:00Z');
   return d.toLocaleDateString('es-ES', { weekday:'long', day:'numeric', month:'long' });
 }
-
 // ═══════════════════════════════════════════════════════════════════
 // IMÁGENES
 // ═══════════════════════════════════════════════════════════════════
@@ -835,13 +791,11 @@ function flagImg(eq) {
   var fb = flagFallback(eq);
   return '<img src="' + fb.replace('64x48','32x24') + '" alt="' + eq + '" class="team-flag" width="32" height="24" loading="lazy" onerror="this.style.display=\'none\'">';
 }
-
 function renderTeam(eq, logoUrl) {
   var fb = flagFallback(eq);
   var src = logoUrl || fb;
   return '<div class="team-display"><img src="' + src + '" alt="' + eq + '" class="team-logo" onerror="this.onerror=null;this.src=\'' + fb + '\'"><div class="team-name-label">' + eq + '</div></div>';
 }
-
 // ═══════════════════════════════════════════════════════════════════
 // TOAST
 // ═══════════════════════════════════════════════════════════════════
@@ -859,7 +813,6 @@ function showToast(msg, durationMs) {
   clearTimeout(t._timer);
   t._timer = setTimeout(function() { t.style.opacity = '0'; }, durationMs);
 }
-
 // ═══════════════════════════════════════════════════════════════════
 // API FETCH
 // ═══════════════════════════════════════════════════════════════════
@@ -868,14 +821,13 @@ async function apiFetch(endpoint) {
     showToast('Límite diario de 100 consultas alcanzado. Usando datos guardados.');
     return null;
   }
-  var url = API_BASE + endpoint;
+  var url = 'https://corsproxy.io/?' + encodeURIComponent(API_BASE + endpoint);
   var res = await fetch(url, { headers: { 'x-apisports-key': API_KEY } });
   if (!res.ok) throw new Error('HTTP ' + res.status);
   var json = await res.json();
   incReqCount();
   return json;
 }
-
 function mapFixture(f) {
   var homeES = NOMBRES[f.teams.home.name] || f.teams.home.name;
   var awayES = NOMBRES[f.teams.away.name] || f.teams.away.name;
@@ -896,7 +848,6 @@ function mapFixture(f) {
     elapsed: f.fixture.status.elapsed,
   };
 }
-
 function mergeLiveData(apiFixtures) {
   apiFixtures.forEach(function(f) {
     var mapped = mapFixture(f);
@@ -912,7 +863,6 @@ function mergeLiveData(apiFixtures) {
     }
   });
 }
-
 // ═══════════════════════════════════════════════════════════════════
 // LOAD INITIAL DATA
 // ═══════════════════════════════════════════════════════════════════
@@ -941,18 +891,17 @@ async function loadFixtures() {
     var oldCache = cacheGet('wc26_fixtures', Infinity);
     if (oldCache && oldCache.length > 0) datos = oldCache;
     else datos = JSON.parse(JSON.stringify(PARTIDOS_BASE));
-    showToast('Sin conexión · Usando datos guardados');
-    document.getElementById('last-update').textContent = ' · Sin conexión';
+    showToast('⚠️ Reconectando...');
+    document.getElementById('last-update').textContent = ' · Reconectando...';
+    setTimeout(loadFixtures, 8000);
   }
   bar.classList.remove('on');
   renderTodo();
 }
-
 function isMatchHoursARG() {
   var h = parseInt(new Date().toLocaleString('en-US', {timeZone:'America/Argentina/Buenos_Aires',hour:'numeric',hour12:false}));
   return h >= 12 || h <= 2;
 }
-
 async function fetchLive() {
   if (!isMatchHoursARG()) return;
   try {
@@ -970,7 +919,6 @@ async function fetchLive() {
     renderTodo();
   } catch(err) { console.warn('fetchLive:', err.message); }
 }
-
 async function fetchToday() {
   try {
     var json = await apiFetch('/fixtures?league=' + LEAGUE + '&season=' + SEASON + '&date=' + HOY);
@@ -980,7 +928,6 @@ async function fetchToday() {
     renderTodo();
   } catch(err) { console.warn('fetchToday:', err.message); }
 }
-
 // ═══════════════════════════════════════════════════════════════════
 // TABLA DE POSICIONES
 // ═══════════════════════════════════════════════════════════════════
@@ -1002,7 +949,6 @@ function calcPosiciones(letra) {
   return eq.map(function(t){ return Object.assign({equipo:t},st[t],{dif:st[t].gf-st[t].gc}); })
     .sort(function(a,b){ return b.pts-a.pts||b.dif-a.dif||b.gf-a.gf||a.equipo.localeCompare(b.equipo,'es'); });
 }
-
 // ═══════════════════════════════════════════════════════════════════
 // RENDER GRUPOS
 // ═══════════════════════════════════════════════════════════════════
@@ -1016,12 +962,10 @@ function renderGrupos() {
     var hoyM   = pids.filter(function(m){ return fechaARG(m)===HOY && getEstado(m)==='upcoming'; });
     var played = pids.filter(function(m){ return getEstado(m)==='played'; });
     var prox   = pids.filter(function(m){ return getEstado(m)==='upcoming' && fechaARG(m)!==HOY; });
-
     var filas = pos.map(function(r,i) {
       var n=i+1;
       return '<tr><td><div class="team-name-cell"><span class="pos-num pos-'+n+'">'+n+'</span>'+flagImg(r.equipo)+'<span>'+r.equipo+'</span></div></td><td>'+r.j+'</td><td>'+r.g+'</td><td>'+r.e+'</td><td>'+r.p+'</td><td>'+r.gf+':'+r.gc+'</td><td class="pts-bold">'+r.pts+'</td></tr>';
     }).join('');
-
     var mini = function(m, cls) {
       cls = cls || '';
       var e = getEstado(m), esHoy = fechaARG(m)===HOY;
@@ -1031,21 +975,18 @@ function renderGrupos() {
       var dd = fechaARG(m).slice(5).replace('-','/');
       return '<div class="mini-match '+cls+'"><div class="mini-team">'+flagImg(m.local)+'<span>'+m.local+'</span></div><div><div class="'+sCls+'">'+txt+'</div><div class="mini-time">'+dd+'</div></div><div class="mini-team r"><span>'+m.visit+'</span>'+flagImg(m.visit)+'</div></div>';
     };
-
     var mHTML = '<div class="group-matches">';
     if (live.length)   mHTML+='<div class="section-label lbl-live">🔴 En Vivo</div>' + live.map(function(m){ return mini(m,'m-live'); }).join('');
     if (hoyM.length)   mHTML+='<div class="section-label lbl-hoy">📅 Hoy</div>' + hoyM.map(function(m){ return mini(m,'m-hoy'); }).join('');
     if (played.length) mHTML+='<div class="section-label">✅ Jugados</div>' + played.map(function(m){ return mini(m); }).join('');
     if (prox.length)   mHTML+='<div class="section-label">🗓 Próximos</div>' + prox.slice(0,3).map(function(m){ return mini(m); }).join('');
     mHTML += '</div>';
-
     var card = document.createElement('div');
     card.className = 'group-card';
     card.innerHTML = '<div class="group-header"><h2>GRUPO '+letra+'</h2><span class="g-count">'+GRUPOS[letra].length+' equipos</span></div><table class="standings-table"><thead><tr><th>Equipo</th><th>J</th><th>G</th><th>E</th><th>P</th><th>GD</th><th>Pts</th></tr></thead><tbody>'+filas+'</tbody></table>'+mHTML;
     grid.appendChild(card);
   });
 }
-
 // ═══════════════════════════════════════════════════════════════════
 // RENDER FIXTURE
 // ═══════════════════════════════════════════════════════════════════
@@ -1091,14 +1032,12 @@ function renderFixture() {
   });
   list.innerHTML = html;
 }
-
 function filtrar(f, btn) {
   filtroActual = f;
   document.querySelectorAll('.filter-btn').forEach(function(b){ b.classList.remove('active'); });
   btn.classList.add('active');
   renderFixture();
 }
-
 // ═══════════════════════════════════════════════════════════════════
 // RENDER HOY — Secciones: HOY → AYER → MAÑANA
 // ═══════════════════════════════════════════════════════════════════
@@ -1108,7 +1047,6 @@ function buildHmcCard(m, seccion) {
   var hl = horaARG(m.utcDate, m.utcTime);
   var scoreHTML, statusTag;
   var hasResult = m.gL !== null && m.statusShort !== 'NS';
-
   if (hasResult) {
     scoreHTML = '<div class="hmc-score"><span class="hmc-score-num '+(esL?'s-live':'')+'">'+m.gL+'</span><span class="hmc-score-div">–</span><span class="hmc-score-num '+(esL?'s-live':'')+'">'+m.gV+'</span></div>';
     if (esL) {
@@ -1129,45 +1067,34 @@ function buildHmcCard(m, seccion) {
       ? '<span class="hmc-status st-prox">Próximo · '+hl+'</span>'
       : '<span class="hmc-status st-prox">⏰ '+hl+' ARG</span>';
   }
-
   var cardCls = esL ? 'hmc hmc-live' : (seccion==='AYER' ? 'hmc hmc-ayer' : (seccion==='HOY' ? 'hmc hmc-gold' : (seccion==='MANANA' ? 'hmc hmc-manana' : 'hmc')));
-
   return '<div class="'+cardCls+'"><div class="hmc-top"><span class="hmc-grp">Grupo '+m.grupo+'</span><span class="hmc-venue">📍 '+m.venue+'</span></div><div class="hmc-body" style="align-items:flex-start">'+renderTeam(m.local,m.logoL)+'<div class="hmc-center" style="margin-top:12px">'+scoreHTML+statusTag+'</div>'+renderTeam(m.visit,m.logoV)+'</div></div>';
 }
-
 function renderHoy() {
   var container = document.getElementById('today-list');
   var ayerPs   = datos.filter(function(m){ return fechaARG(m)===AYER; }).sort(function(a,b){ return a.utcTime.localeCompare(b.utcTime); });
   var hoyPs    = datos.filter(function(m){ return fechaARG(m)===HOY; }).sort(function(a,b){ return a.utcTime.localeCompare(b.utcTime); });
   var mananaPs = datos.filter(function(m){ return fechaARG(m)===MANANA; }).sort(function(a,b){ return a.utcTime.localeCompare(b.utcTime); });
-
   document.getElementById('today-badge').textContent = hoyPs.length;
-
   var anyLive = datos.some(function(m){ return getEstado(m)==='live'; });
   document.getElementById('liveIndicator').classList.toggle('visible', anyLive);
-
   var html = '';
-
   // HOY primero
   if (hoyPs.length) {
     html += '<div class="hoy-section"><div class="hoy-sec-hdr"><span class="hoy-sec-label lbl-hoy">HOY</span><span class="hoy-sec-date">'+fechaCorta(HOY)+'</span></div>' + hoyPs.map(function(m){ return buildHmcCard(m,'HOY'); }).join('') + '</div>';
   } else {
     html += '<div class="hoy-section"><div class="hoy-sec-hdr"><span class="hoy-sec-label lbl-hoy">HOY</span><span class="hoy-sec-date">'+fechaCorta(HOY)+'</span></div><div class="empty-state" style="padding:30px 20px"><div class="eico">😴</div><p>Sin partidos programados hoy</p></div></div>';
   }
-
   // AYER
   if (ayerPs.length) {
     html += '<div class="hoy-section"><div class="hoy-sec-hdr"><span class="hoy-sec-label lbl-ayer">AYER</span><span class="hoy-sec-date">'+fechaCorta(AYER)+'</span></div>' + ayerPs.map(function(m){ return buildHmcCard(m,'AYER'); }).join('') + '</div>';
   }
-
   // MAÑANA
   if (mananaPs.length) {
     html += '<div class="hoy-section"><div class="hoy-sec-hdr"><span class="hoy-sec-label lbl-manana">MAÑANA</span><span class="hoy-sec-date">'+fechaCorta(MANANA)+'</span></div>' + mananaPs.map(function(m){ return buildHmcCard(m,'MANANA'); }).join('') + '</div>';
   }
-
   container.innerHTML = html || '<div class="empty-state"><div class="eico">📅</div><p>No hay partidos para mostrar</p></div>';
 }
-
 // ═══════════════════════════════════════════════════════════════════
 // TABS
 // ═══════════════════════════════════════════════════════════════════
@@ -1179,7 +1106,6 @@ function switchTab(tab) {
   renderTodo();
 }
 function renderTodo() { renderGrupos(); renderFixture(); renderHoy(); }
-
 // ═══════════════════════════════════════════════════════════════════
 // PARTÍCULAS
 // ═══════════════════════════════════════════════════════════════════
@@ -1193,27 +1119,21 @@ function crearParticulas() {
     c.appendChild(p);
   }
 }
-
 // ═══════════════════════════════════════════════════════════════════
 // INIT
 // ═══════════════════════════════════════════════════════════════════
 document.addEventListener('DOMContentLoaded', async function() {
   crearParticulas();
   updateReqCounter();
-
   var d = new Date(HOY + 'T12:00:00Z');
   var sES = d.toLocaleDateString('es-ES', { weekday:'long', day:'numeric', month:'long', year:'numeric' });
   document.getElementById('today-date-title').textContent = 'Hoy — ' + sES.charAt(0).toUpperCase() + sES.slice(1);
-
   // Initial render with fallback while API loads
   renderTodo();
-
   // Load from API (with cache)
   await loadFixtures();
-
   // Live poll every 60s (only during match hours)
   setInterval(fetchLive, 60000);
-
   // Today refresh every 10 min
   setInterval(fetchToday, 600000);
 });
@@ -1223,6 +1143,5 @@ document.addEventListener('DOMContentLoaded', async function() {
   <span id="req-counter">Consultas hoy: 0 / 100</span>
   &nbsp;·&nbsp; Copa Mundial FIFA 2026
 </footer>
-
 </body>
 </html>
